@@ -11,4 +11,4 @@ import twindPlugin from "$fresh/plugins/twind.ts";
 import twindConfig from "./twind.config.ts";
 
 // development: (hostname: "45.146.254.69", port: 3000)
-await start(manifest, { plugins: [twindPlugin(twindConfig)], hostname: "45.146.254.69", port: 3000 });
+await start(manifest, { plugins: [twindPlugin(twindConfig)] });
