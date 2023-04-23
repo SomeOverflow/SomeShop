@@ -61,7 +61,7 @@ export default function Home(props: PageProps<PageData>) {
           {props.data.products.map((product) => {
             return (
               <article class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300 transition-all">
-                <a href="#">
+                <a href={`products/${product.id}`}>
                   <div class="relative flex items-end overflow-hidden rounded-xl">
                     <img
                       src={product.image}
