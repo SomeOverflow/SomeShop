@@ -114,7 +114,15 @@ export default function Product(props: PageProps<PageData>) {
       )}
       {!product && (
         <>
-          404
+          <section class="min-w-screen min-h-screen bg-white flex items-center p-5 lg:p-10 overflow-hidden relative">
+            <div class="w-full max-w-6xl rounded bg-white shadow-2xl p-10 lg:p-20 mx-auto text-gray-800 relative md:text-left">
+              <div class="flex flex-col items-center justify-center">
+                <h1 class="w-full h-full text-9xl text-center">404</h1>
+                <p>This product could not be found</p>
+                <a href="/" class="pt-2 pb-2 pl-3 pr-3 bg-gray-300 mt-5 rounded">Get Home!</a>
+              </div>
+            </div>
+          </section>
         </>
       )}
     </>
